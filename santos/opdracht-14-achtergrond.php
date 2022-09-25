@@ -9,8 +9,12 @@
 </head>
 
 <body bgcolor='<?php echo $GET["kleuren"]; ?>'>
+    <!--Maak de achtergrond de geselecteerde variabele-->
+
     <h1>Zie hier: jouw favo kleur!</h1>
+
     <h3><a href="opdracht-14.php">Opnieuw</a></h3>
+    <!--Ga terug naar de vorige pagina om een nieuwe kelur te selecteren-->
 </body>
 
 </html>
