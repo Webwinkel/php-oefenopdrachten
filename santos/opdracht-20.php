@@ -11,10 +11,10 @@
 <body>
     <form name="inlog" method="get" action="./opdracht-20-admin.php">
         <label for="username">Enter your username:</label>
-        <input name="username" id="username" placeholder="username">
+        <input type="text" name="username" id="username" placeholder="username">
         <br />
         <label for="password">Enter your password:</label>
-        <input name="password" id="password" placeholder="password">
+        <input type="password" name="password" id="password" placeholder="password">
         <br />
         <input type="submit" value="Log in">
     </form>
