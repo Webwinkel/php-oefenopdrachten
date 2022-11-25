@@ -2,6 +2,8 @@
 <html lang="nl">
 
 <head>
+    <meta charset="utf-8">
+    <title>Bezoekersteller</title>
     <?php
     if (file_exists("teller.txt")) {
         $fp = fopen("teller.txt", "r+");
@@ -9,7 +11,7 @@
         $teller++;
         rewind($fp);
         fputs($fp, $teller);
-        $fclose($fp);
+        fclose($fp);
     } else {
         $fp = fopen("teller.txt", "w");
         $teller = "1";
