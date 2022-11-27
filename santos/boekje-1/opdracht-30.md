@@ -1,0 +1,1 @@
+Omdat met regel 1 de de filepointer wordt gesloten en met regel 2 er de filepointer met de fopen functie herschreven wordt en dus het bestand weer opent
