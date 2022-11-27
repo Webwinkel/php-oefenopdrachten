@@ -10,7 +10,7 @@
             $fp = fopen("naam.txt", "r"); // Maak een filepointer naar naam.txt met read-only machtigingen
             $naam = fgets($fp); // Laat naam gelijk staan aan de tekst uit naam.txt
             fclose($fp); // Sluit naam.txt
-            $fp = fopen("naam.txt", "w"); // Maak een filepointer naar naam.txt met create-read-rewrite machtigingen
+            $fp = fopen("naam.txt", "w"); // Maak een filepointer naar naam.txt met create-rewrite machtigingen
             echo "Jouw naam is $naamnieuw"; // Print naamnieuw
             if ($naamnieuw != $naam) { // Als naamnieuw niet gelijk is aan naam
                 echo "<br>Maar vorige keer was je naam nog $naam"; // Print de tekst uit naam.txt
