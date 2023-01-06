@@ -5,21 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leveranciers</title>
+    <title>Document</title>
 </head>
 
 <body>
     <?php
-    // Maak verbinding
-    $db = new PDO('sqlite:kantoor.sqlite');
-    echo $db;
-    // SQL
-    $sql = "SELECT Naam FROM Leverancier";
-    $resultaat = $db->query($sql);
-    foreach ($resultaat as $row) {
-        echo $row['Naam'] . '<br/>';
+    $db = new PDO('mysql:host=localhost;dbname=classicmodels', 'root', 'usbw');
+
+    $result = $db->query("SELECT productCode, buyPrice FROM products");
+
+    foreach ($result as $row) {
+        echo $row['productCode'] . "|   " . $row['buyPrice'] . "<br/>";
     }
-    // Sluit verbinding
+
     $db = NULL;
     ?>
 </body>
